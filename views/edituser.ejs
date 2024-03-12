@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit user</title>
+    <link rel="stylesheet" href="/static/style1.css">
+    <link rel="icon" href="../static/assets/protection.png">
+</head>
+<body>
+    
+
+<div class="container">
+    <div class="card">
+      <h2> Edit user </h2>
+      <form action="/edituser/<%= users._id %>" method="POST">
+        <label for="username">Username</label>
+        <input type="email" id="email" name="email" placeholder="Enter your username" value="<%= users.name %>">
+  
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" value="<%= users.password %>">
+        <% if(locals.already){ %>
+          <div class="alter alert-success text-center" style="float: inline-start; color: rgb(12, 202, 37);">
+              <%= already %>
+          </div>
+          <% } %>
+        <% if (locals.success) { %>
+          <div class="alter alert-success text-center" style="float: inline-start; color: red;">
+            <%= success %>
+        </div>
+        <% } %>
+        <button type="submit">Update user</button>
+      </form>
+      <div class="switch"><a href="/adminlog">Back to home</a></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="/static/style1.css">
+    <link rel="icon" href="../static/assets/protection.png">
+</head>
+<body>
+    
+
+<div class="container">
+    <div class="card">
+      <h2> Admin Login </h2>
+      <form action="/adminlog" method="POST">
+        <label for="username">Username</label>
+        <input type="email" id="email" name="email" placeholder="Enter your username" required>
+  
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+  
+        <button type="submit">Login</button>
+      </form>
+      <div class="switch"><a href="/login">User Login</a></div>
+    </div>
+  </div>
+</body>
+</html>

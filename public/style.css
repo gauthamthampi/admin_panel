@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+
+body{
+    font-family:'Open Sans', sans-serif;
+    background-image: url('./assets/3418448.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: white;
+}
+.center-div{
+padding-top: 10%;
+
+}
+
+.btn.btn-success{
+    padding: 4em 2em;
+}
+
+form{
+    padding: 0 3em;
+}
+
+#login .title>span{
+    font-size: .8em;
+
+}
+
+.container{
+    position: static;
+    left: 50%;
+}
